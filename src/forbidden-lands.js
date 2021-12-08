@@ -28,7 +28,7 @@ hookDebug: {
 console.warn("HOOKS DEBUG ENABLED: ", CONFIG.debug.hooks);
 
 Hooks.once("init", () => {
-	FoundryOverrides(); // Initialize Foundry Overrides
+	FoundryOverrides();
 	game.fbl = {
 		config: FBL,
 		roll: FBLRollHandler.createRoll,
@@ -54,6 +54,8 @@ Hooks.once("init", () => {
 	registerSheets();
 	initializeHandlebars();
 	registerSettings();
+	// Check preferences and conditionally enable darkmode
+	if (game.settings.get("forbidden-lands", "darkmode")) $("html").addClass("dark");
 });
 
 Hooks.on("renderPause", (_app, html) => {
