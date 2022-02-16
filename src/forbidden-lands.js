@@ -15,6 +15,7 @@ import localizeString from "./utils/localize-string.js";
 import { ForbiddenLandsJournalEntry } from "./journal/journal-document.js";
 import { init, utilities } from "./journal/adventure-sites/adventure-site-generator.js";
 import { FBLCombat, FBLCombatant, FBLCombatTracker } from "@system/core/combat.js";
+import { declareHooks } from "@system/hooks/style-hooks.js";
 
 /**
  * We use this label to remove the debug option in production builds.
@@ -54,6 +55,7 @@ Hooks.once("init", () => {
 	registerSheets();
 	initializeHandlebars();
 	registerSettings();
+	declareHooks();
 	// Check preferences and conditionally enable darkmode
 	if (game.settings.get("forbidden-lands", "darkmode")) $("html").addClass("dark");
 });
