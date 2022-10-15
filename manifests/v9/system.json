@@ -75,6 +75,6 @@
 	"url": "https://github.com/fvtt-fria-ligan/forbidden-lands-foundry-vtt",
 	"socket": true,
 	"manifest": "https://raw.github.com/tak5haka/forbidden-lands-tak-foundry-vtt/main/manifests/v9/system.json",
-	"download": "https://github.com/tak5haka/forbidden-lands-tak-foundry-vtt/releases/download/v9.2.2/fbl-fvtt_v9.2.2.zip",
+	"download": "https://github.com/tak5haka/forbidden-lands-tak-foundry-vtt/archive/refs/tags/v9.2.2.1.zip",
 	"license": "LICENSE.txt"
 }
