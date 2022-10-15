@@ -46,7 +46,7 @@ Content for the system is available as addon modules. You can purchase them at F
 ## :rocket: Install
 
 1. Go to the setup page and choose **Game Systems**.
-2. Click the **Install System** button, and paste in this [manifest link](https://github.com/fvtt-fria-ligan/forbidden-lands-foundry-vtt/releases/latest/download/system.json)
+2. Click the **Install System** button, and paste in this [manifest link](https://github.com/tak5haka/forbidden-lands-tak-foundry-vtt/releases/latest/download/system.json)
 3. Create a Game World using the Forbidden Lands system.
 
 ## :vertical_traffic_light: Supported Modules
